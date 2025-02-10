@@ -8,3 +8,6 @@ A Simulated Bank API
 
 OpenApi v3.x : https://github.com/vborbely/SimuBank/blob/main/server-api.yaml
 
+## API endpoints
+
+https://my-json-server.typicode.com/vborbely/SimuBank
