@@ -1,0 +1,142 @@
+openapi: 3.0.0
+info:
+  title: SimuBank API
+  description: Mock API for SimuBank transactions and user authentication.
+  version: 1.0.0
+servers:
+  - url: https://my-json-server.typicode.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME
+
+paths:
+  /users:
+    get:
+      summary: Get user by email
+      parameters:
+        - name: email
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: User details
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: integer
+                    email:
+                      type: string
+                    name:
+                      type: string
+                    biometric_enabled:
+                      type: boolean
+
+  /transactions:
+    get:
+      summary: Get transactions for a user
+      parameters:
+        - name: userId
+          in: query
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: List of transactions
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: integer
+                    userId:
+                      type: integer
+                    date:
+                      type: string
+                      format: date
+                    merchant:
+                      type: string
+                    amount:
+                      type: integer
+                    currency:
+                      type: string
+                    description:
+                      type: string
+                    from_account:
+                      type: string
+                    to_account:
+                      type: string
+                    category:
+                      type: string
+
+  /transactions/{transactionId}:
+    get:
+      summary: Get transaction details
+      parameters:
+        - name: transactionId
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Transaction details
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  userId:
+                    type: integer
+                  date:
+                    type: string
+                    format: date
+                  merchant:
+                    type: string
+                  amount:
+                    type: integer
+                  currency:
+                    type: string
+                  description:
+                    type: string
+                  from_account:
+                    type: string
+                  to_account:
+                    type: string
+                  category:
+                    type: string
+
+  /settings:
+    get:
+      summary: Get user settings
+      parameters:
+        - name: userId
+          in: query
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: User settings
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  userId:
+                    type: integer
+                  notifications_enabled:
+                    type: boolean
+                  limit:
+                    type: integer
+                  profile_picture:
+                    type: string
