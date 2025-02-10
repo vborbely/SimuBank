@@ -308,67 +308,7 @@
       "from_account": "511197715085709432939606",
       "to_account": "9933967378395855",
       "category": "Food & Drinks"
-    },
-    {
-      "id": 95,
-      "userId": 1,
-      "date": "2024-08-19",
-      "merchant": "Amazon",
-      "amount": -2485,
-      "currency": "HUF",
-      "description": "Amazon purchase",
-      "from_account": "513439894627122704517624",
-      "to_account": "9312756092084841",
-      "category": "Shopping"
-    },
-    {
-      "id": 96,
-      "userId": 1,
-      "date": "2024-08-18",
-      "merchant": "Amazon",
-      "amount": -12614,
-      "currency": "HUF",
-      "description": "Amazon purchase",
-      "from_account": "116062782409851197246730",
-      "to_account": "618029038094255179518778",
-      "category": "Shopping"
-    },
-    {
-      "id": 97,
-      "userId": 1,
-      "date": "2024-08-17",
-      "merchant": "Pharmacy",
-      "amount": -17514,
-      "currency": "HUF",
-      "description": "Pharmacy purchase",
-      "from_account": "351678537303347348389199",
-      "to_account": "215793591445395977863783",
-      "category": "Healthcare"
-    },
-    {
-      "id": 98,
-      "userId": 1,
-      "date": "2024-08-16",
-      "merchant": "Electric Company",
-      "amount": -15918,
-      "currency": "HUF",
-      "description": "Electric Company purchase",
-      "from_account": "400114383799025235153772",
-      "to_account": "430566605297624999124527",
-      "category": "Utilities"
-    },
-    {
-      "id": 99,
-      "userId": 1,
-      "date": "2024-08-15",
-      "merchant": "Electric Company",
-      "amount": -18008,
-      "currency": "HUF",
-      "description": "Electric Company purchase",
-      "from_account": "714155910649400470234907",
-      "to_account": "651436575113685522239827",
-      "category": "Utilities"
-    },
+    }
   ],
   "settings": {
     "userId": 1,
