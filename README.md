@@ -6,3 +6,5 @@ A Simulated Bank API
 
 ## API description
 
+OpenApi v3.x : https://github.com/vborbely/SimuBank/blob/main/server-api.yaml
+
