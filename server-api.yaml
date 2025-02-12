@@ -44,6 +44,7 @@ paths:
           required: true
           schema:
             type: integer
+        - $ref: '#/components/parameters/Paginator'
       responses:
         '200':
           description: List of transactions
@@ -168,3 +169,22 @@ paths:
                       type: integer
                     currency:
                       type: string
+
+components:
+  schemas:
+    Paginator:
+      type: object
+      properties:
+        _page:
+          type: integer
+        _limit:
+          type: integer
+
+  parameters:
+    Paginator:
+      name: paginator
+      in: query
+      required: false
+      schema:
+        $ref: '#/components/schemas/Paginator'
+
