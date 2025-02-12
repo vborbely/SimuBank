@@ -140,3 +140,31 @@ paths:
                     type: integer
                   profile_picture:
                     type: string
+
+  /api/partners:
+    get:
+      summary: Get partner templates
+      responses:
+        '200':
+          description: List of partner templates
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: integer
+                    name:
+                      type: string
+                    account:
+                      type: string
+                    comment:
+                      type: string
+                    iban:
+                      type: string
+                    amount:
+                      type: integer
+                    currency:
+                      type: string

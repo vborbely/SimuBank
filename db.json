@@ -8,6 +8,35 @@
       "biometric_enabled": true
     }
   ],
+  "partners": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "account": "1234567890123456",
+      "comment": "Monthly rent payment",
+      "iban": "HU42123456789012345678901234",
+      "amount": 150000,
+      "currency": "HUF"
+    },
+    {
+      "id": 2,
+      "name": "Acme Corp.",
+      "account": "9876543210987654",
+      "comment": "Invoice payment",
+      "iban": "DE89370400440532013000",
+      "amount": 500000,
+      "currency": "EUR"
+    },
+    {
+      "id": 3,
+      "name": "Jane Smith",
+      "account": "5678901234567890",
+      "comment": "Freelance project",
+      "iban": "GB29NWBK60161331926819",
+      "amount": 250000,
+      "currency": "USD"
+    }
+  ],
   "transactions": [
     {
       "id": 51,
@@ -315,6 +344,6 @@
     "notifications_enabled": true,
     "limit": 100000,
     "currency": "HUF",
-    "profile_picture": "https://example.com/profile.jpg"
+    "profile_picture": "https://images.unsplash.com/photo-1615109398623-88346a601842?w=300"
   }
 }
